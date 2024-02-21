@@ -10,13 +10,13 @@ module.exports = {
     "gatsby-plugin-styled-components", 
     "gatsby-plugin-image", 
     "gatsby-plugin-sharp", 
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `HoldTML`,
-        icon: ` k`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `HoldTML`,
+    //     icon: ``,
+    //   },
+    // },
     // "gatsby-plugin-gatsby-cloud", 
     "gatsby-plugin-offline", 
     "gatsby-plugin-netlify", 
