@@ -13,9 +13,9 @@ const IndexPage = () => {
       
       <section className="hero-section">
         <div className="hero-wrapper">
-          <h2>bienestar y salud</h2>
+          <h1>Bienestar y Salud</h1>
           <p>pausas aromaticas para promover un ambiente de trabajo saludable</p>
-          <StaticImage className="hero-bg-img" src="../images/stock.jpg"></StaticImage>
+          {/* <StaticImage className="hero-bg-img" src="../images/stock.jpg"></StaticImage> */}
         </div>
       </section>
 
@@ -72,13 +72,13 @@ const IndexPage = () => {
       </section>
       
       
-      <footer>
+      <section className='footer'>
         <ul className="social-media-container">
-          <li className="li-Instagram"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
-          <li className="li-Facebook"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
-          <li className="li-LinkedIn"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
+          <li className="li-Instagram"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon className='sm-icon' icon={faInstagram} /> Instagram</a></li>
+          <li className="li-Facebook"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon className='sm-icon' icon={faFacebook} /> Facebook</a></li>
+          <li className="li-LinkedIn"><a target='_blank' rel="noreferrer" href="https://www.instagram.com/ornela_bienestarysalud/"><FontAwesomeIcon className='sm-icon' icon={faLinkedin} /> LinkedIn</a></li>
         </ul>
-      </footer>
+      </section>
     </main>
   )
 }

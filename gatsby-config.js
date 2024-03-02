@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-styled-components", 
     "gatsby-plugin-image", 
     "gatsby-plugin-sharp", 
+    `gatsby-transformer-sharp`,
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
@@ -18,16 +19,17 @@ module.exports = {
     //   },
     // },
     // "gatsby-plugin-gatsby-cloud", 
+
     "gatsby-plugin-offline", 
     "gatsby-plugin-netlify", 
     "gatsby-plugin-smoothscroll", 
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        // Your Gatsby Cloud API key
-        apiKey: `YOUR_API_KEY`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gatsby-cloud`,
+    //   options: {
+    //     // Your Gatsby Cloud API key
+    //     apiKey: `YOUR_API_KEY`,
+    //   },
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -37,3 +39,5 @@ module.exports = {
     },
   ],
 }
+
+console.log('api token => ', process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN);

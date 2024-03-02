@@ -8,18 +8,24 @@
 main{
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr;
 }
+
 .section{
     height: 100dvh;
-    
+    justify-self: center;
     display: grid;
     justify-content: center;
     align-items: center;
-    
     box-shadow: rgba(2, 1, 0, 0.14) 0px 1px 41px 2px;
+    width: 80dvw;
+    max-width: 1000px;
+    font-size: clamp(12px, 3px + 1vw , 18px);
+
 }
 .main-section-container{
-    width: 60dvw;
+    width: 80dvw;
+    max-width: 1000px;
     margin: 20px;
     /* border: solid black 4px; */
     padding: 6rem;
@@ -33,18 +39,27 @@ main{
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    background-image: url('../images/stock.jpg');
+    background-size: cover;
+    background-position-x: center;
 }
-.hero-bg-img{
+/* .hero-bg-img{
     position: absolute;
     top: 0;
     left: 0;
     z-index: -2;
     height: 100dvh;
+    width: auto;
+} */
+.hero-wrapper h1{
+    font-size: clamp(22px, 10px + 6vw, 40px);
 }
 
 .que-es-container{
     display: grid;
-    grid-template-columns: auto 1fr;
+    @media(min-width: 760px){grid-template-columns: auto 1fr;}
     gap: 1.4rem;
     align-items: center;
     text-align: justify;
@@ -53,14 +68,15 @@ main{
     grid-column: 1/-1;
     text-align: center;
 }
-.ques-img{
-    width: 20rem;
+.ques-img *{
+    /* width: 20rem; */
+    width: clamp(80px, 14px + 14vw, 260px);
     /* height: 18rem; */
 }
 
 .servicios-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @media(min-width: 760px){grid-template-columns: repeat(3, 1fr);}
     gap: 1.4rem;
 }
 .servicios-container h1{
@@ -82,19 +98,27 @@ main{
 .quienesSomos-container h1{
     grid-column: 1/-1;
 }
-
-footer{
-    /* position: absolute; */
-    /* bottom: 0; */
+.footer{
+    /* position: relative; */
+    bottom: 0;
     background-color: black;
-    /* width: 100dvw; */
-    /* display: grid; */
-    /* justify-content: center; */
+    /* width: 100%; */
+    display: grid;
+    justify-content: center;
 }
-footer ul li{
+.footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    padding: 1.2rem;
+}
+.footer ul li a{
     color: white;
     list-style-type: none;
+    text-decoration: none;
 }
+
+
 .fake-img{
     border-radius: 1rem;
 }
